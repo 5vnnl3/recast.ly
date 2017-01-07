@@ -1,5 +1,5 @@
 var searchYouTube = (options, callback) => {
-  // TODO
+  window.fakeVideoData;
 };
 
 window.searchYouTube = searchYouTube;

@@ -1,11 +1,20 @@
 class App extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props);
+    props.searchYouTube(_, () => { window.fakeVideoData; });
     this.state = {
       currentVideo: window.fakeVideoData[0],
-      videoList: window.fakeVideoData
+      videoList: window.fakeVideoData,
+      // initialize: console.log(props)
     };
   }
+
+  // componentDidMount() {
+  //   this.state.initialize();
+  //   // window.searchYoutube
+  //   // this.searchYoutube;
+  // }
 
   onTitleClick(currentVideo) {
     this.setState({currentVideo});
